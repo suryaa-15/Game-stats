@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Your BGMI Rank</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>BGMI Rank Calculator</h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="javascript:void(0);" onclick="navigateTo('index.html');">Home</a></li>
+                    <li><a href="javascript:void(0);" onclick="navigateTo('about.html');">About Us</a></li>
+                    <li><a href="javascript:void(0);" onclick="navigateTo('rank.html');">Rank</a></li>
+                    <li><a href="javascript:void(0);" onclick="navigateTo('services.html');">Services</a></li>
+                    <li><a href="javascript:void(0);" onclick="navigateTo('contact.html');">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="rank-calculator">
+        <div class="container">
+            <h2>Calculate Your BGMI Rank</h2>
+            <form id="rankForm">
+                <div class="form-group">
+                    <label for="matchesPlayed">Matches Played:</label>
+                    <input type="number" id="matchesPlayed" placeholder="Enter matches played" required>
+                </div>
+                <div class="form-group">
+                    <label for="kills">Kills:</label>
+                    <input type="number" id="kills" placeholder="Enter kills" required>
+                </div>
+                <div class="form-group">
+                    <label for="placement">Average Placement:</label>
+                    <input type="number" id="placement" placeholder="Enter placement" required>
+                </div>
+                <button type="submit" class="btn-primary">Calculate Rank</button>
+            </form>
+            <div id="result" class="result-display"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 BGMI Rank Calculator | Designed for Gamers</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
